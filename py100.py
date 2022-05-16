@@ -5,6 +5,7 @@ import cmath
 
 def quadratic():
     """
+    004
     二次方程式 ax**2 + bx + c = 0
     a、b、c 用户提供,为实数,a ≠ 0           
     """
@@ -22,6 +23,7 @@ def quadratic():
 
 def triangleArea():
     """
+    005
     计算三角形的面积
     已知三角形三边长
     """
@@ -34,6 +36,19 @@ def triangleArea():
     s = (p * (p - a) * (p - b) * (p - c))**0.5
 
     print('三角形的面积是%0.2f'%s)
+
+
+def circleArea():
+    """
+    006
+    计算圆的面积
+    已知圆的半径
+    """
+    p = 3.14
+    r = float(input('请输入圆的半径：'))
+    s = p * r * r
+    print('半径为{0}圆的面积是{1}'.format(r, s))
+
     
 
 
@@ -46,3 +61,4 @@ def triangleArea():
 
 # quadratic()
 # triangleArea()
+circleArea()
