@@ -74,12 +74,12 @@ def triangleArea():
     a = float(input('输入第一条边长a:'))
     b = float(input('输入第一条边长b:'))
     c = float(input('输入第一条边长c:'))
-
-    p = (a + b + c) / 2
-
-    s = (p * (p - a) * (p - b) * (p - c))**0.5
-
-    print('三角形的面积是%0.2f'%s)
+    if a + b > c and a + c > b and b + c > a: 
+        p = (a + b + c) / 2
+        s = (p * (p - a) * (p - b) * (p - c))**0.5
+        print('三角形的面积是%0.2f'%s)
+    else:
+        print('输入三条边构不成三角形')
 
 
 def circleArea():
